@@ -1,5 +1,7 @@
 # Install and configure Starship
-curl -sS https://starship.rs/install.sh | sh
+curl -sS https://starship.rs/install.sh -o starship.sh
+sh starship.sh -y
+rm starship.sh
 echo "eval \"\$(starship init zsh)\"" >> ${ZSOTDIR:-$HOME}/.zshrc
 
 # Install and configure ZSH Auto Suggestions
